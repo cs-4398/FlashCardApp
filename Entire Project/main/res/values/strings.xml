@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MarchFifth</string>
+    <string name="newSetButton">New Set</string>
+    <string name="ViewDeleteSetButton">View / Delete Set</string>
+    <string name="enter_a_title_or_description_for_the_set">Enter a title or description for the set</string>
+    <string name="title_description">Title / Description</string>
+    <string name="enter_the_number_of_flashcards_in_this_set">Enter the number of flashcards in this set</string>
+    <string name="number_of_flashcards">Number of Flashcards</string>
+    <string name="title">Title/Description</string>
+    <string name="number_of_cards">Number of Cards</string>
+    <string name="nextButton">Next</string>
+    <string name="make_first_flashcard">Make First Flashcard</string>
+    <string name="enter_front_of_flashcard_question">Enter Front of Flashcard (Question)</string>
+    <string name="enter_the_back_of_flashcard_answer">Enter the Back of Flashcard (Answer)</string>
+    <string name="next_card">Next Card</string>
+</resources>
