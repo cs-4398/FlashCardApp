@@ -12,6 +12,10 @@ class flashCard{
 		return front;}
 	String getBack(){
 		returnBack;}
+    void tested(){
+	numTested++;}
+    void wrong(){
+	numWrong++;}
 	boolean isMostMissed(){
 		if(numTested/numWong > 1)
 			return true;
