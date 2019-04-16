@@ -1,0 +1,30 @@
+package flashCardApp;
+
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+class DeckTest{
+    @Test
+    @DisplayName("Successfully Creates Deck from Decks")
+    public void testDecks()
+    {
+        Decks tester = new Decks;
+        createDeck("testDeck", 1);
+        assertTrue(tester.viewDeck("testDeck"));
+    }
+    @Test
+    @DisplayName("Successfully Delete Deck from Decks")
+    public void testDecks()
+    {
+        Decks tester = new Decks;
+        createDeck("testDeck", 1);
+        tester.deleteDeck("testDeck");
+        assertFalse(tester.viewDeck("testDeck"));
+    }
+    
+}
