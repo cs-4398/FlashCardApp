@@ -1,3 +1,5 @@
+package com.example.marchfifth;
+
 class Deck{
     private int  numCards;
     private flashCard[] newDeck;

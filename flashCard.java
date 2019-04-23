@@ -1,3 +1,5 @@
+package com.example.marchfifth;
+
 class flashCard{
 	private String front;
 	private String back;
