@@ -5,14 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mainMenu);
+        setContentView(R.layout.activity_mainmenu);
         //Toast.makeText(this, "JUNIT TEST: APP CREATED SUCCESSFULLY", Toast.LENGTH_LONG).show();
         Log.i("info", "Done creating the app");
     }
