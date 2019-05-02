@@ -12,14 +12,14 @@ class Decks{
 	numDecks++;
     }
 
-    public void deleteDeck(String name){
+    public static void deleteDeck(String name){
 	int location = deckNames.indexOf(name);
 	deckNames.remove(location);
 	deckList.remove(location);
 	numDecks--;
     }
 
-    public Deck viewDeck(String name){
+    public static Deck viewDeck(String name){
 	int location = deckNames.indexOf(name);
 	Deck current = deckList.get(location);
 	return current;

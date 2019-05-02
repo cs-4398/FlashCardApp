@@ -25,4 +25,6 @@ class Deck {
 	public String getBack(int loc){
 		return backs[loc];
 	}
+
+	public int getNumCards(){return numCards;}
 }
