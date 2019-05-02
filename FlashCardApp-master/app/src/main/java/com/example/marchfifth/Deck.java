@@ -48,7 +48,7 @@ class Deck {
 	/**
 	* This method retrieves the back of the card (solution)
 	*@param loc is the location of the card in the list of cards in the deck
-	*@retruns front of the card
+	*@returns front of the card
 	*/
 	public String getBack(int loc){
 		return backs[loc];
