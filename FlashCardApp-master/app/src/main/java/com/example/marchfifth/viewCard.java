@@ -17,12 +17,18 @@ public class viewCard extends AppCompatActivity {
     /**
     * heading is the textView to display the number of the flashcard being displayed
     * body is the textView to display the front (question) or back (answer) of the flashcard being displayed
-    * button is the button used to view the next view, (the back (answer) and then next card)
+    * button is the button used to view the next textView, (the back (answer) and then next card)
     */
     TextView heading;
     TextView body;
     Button button;
-
+     /**
+    * onCreate method called when app is created, sets content view and initiates variables and textViews
+    * variables for user input and creates intent to pass given variables and set new content views
+    * @param Bundle savedInstanceState saved instance state of app in current condition
+    * @return nothing
+    * @since 1.0
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,11 +43,16 @@ public class viewCard extends AppCompatActivity {
         final Deck current = Decks.viewDeck(set);
         final int numCards = current.getNumCards();
         body.setText(current.getFront(1));
-
+        
         button.setOnClickListener(new View.OnClickListener() {
             int i = 1;
             boolean a = true;
-
+            /**
+            * onClick method called when button is pressed, sets values of next textView being viewed
+            * @param View v current view 
+            * @return nothing
+            * @since 1.0
+            */
             @Override
             public void onClick(View v) {
                 if (a) {
@@ -62,6 +73,12 @@ public class viewCard extends AppCompatActivity {
             }
         });
     }
+    /**
+    * openNextActivity method called when last card of deck is viewed, returns user to main menu
+    * @param nothing
+    * @return nothing
+    * @since 1.0
+    */
     public void openNextActivity() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
