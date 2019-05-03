@@ -6,9 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+/**
+* viewCard is the class used to display the flash cards of a chosen deck
+* 
+* @author Laura Doan
+* 
+*/
 
 public class viewCard extends AppCompatActivity {
-
+    /**
+    * heading is the textView to display the number of the flashcard being displayed
+    * body is the textView to display the front (question) or back (answer) of the flashcard being displayed
+    * button is the button used to view the next view, (the back (answer) and then next card)
+    */
     TextView heading;
     TextView body;
     Button button;
