@@ -6,8 +6,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+/**
+* 
+* ViewDeleteSet is the class associated with the view to be 
+* able to view or delete a specific set of flashcards that
+* have been created
+* 
+* author Nash Bateman and Laura Doan
+*/
 
 public class ViewDeleteSet extends AppCompatActivity {
+    /**
+    * SET is the variable used for the name of the set of flashcards wishing to be viewed or deleted
+    * viewButton is the button to view a set of flashcards chosen
+    * deleteButton is the button to delete a specified set of flashcards
+    */
     public static final String SET = "com.example.marchfifth.SET";
     Button viewButton;
     Button deleteButton;
