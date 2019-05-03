@@ -7,14 +7,31 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+/**
+* firstFlashCard is the class associated with the view needed to obtain
+* values for the front (answer) and back (solution) for each flash card 
+* in the deck being created
+* 
+* @author Nash Bateman and Laura Doan
+* 
+*/
+
 
 public class firstFlashcard extends AppCompatActivity {
-
+    
+    /**
+    * cardFront and cardBack are the editText views used to obtain the front and back
+    * values for each flash card
+    * front and back are strings that hold these values inserted into the editText views
+    */
     EditText cardFront;
     EditText cardBack;
     TextView cardCount;
     String front, back;
-
+    
+    /**
+    * NextCardButton submits the given information and switches to the next card to be created
+    */
     Button NextCardButton;
 
     @Override
