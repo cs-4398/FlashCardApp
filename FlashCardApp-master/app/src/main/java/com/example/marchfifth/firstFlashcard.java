@@ -33,7 +33,13 @@ public class firstFlashcard extends AppCompatActivity {
     * NextCardButton submits the given information and switches to the next card to be created
     */
     Button NextCardButton;
-
+     /**
+    * onCreate method called when app is created, sets content view and EditText 
+    * variables for user input and creates intent to pass given variables and set new content views
+    * @param Bundle savedInstanceState saved instance state of app in current condition
+    * @return nothing
+    * @since 1.0
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +60,13 @@ public class firstFlashcard extends AppCompatActivity {
         NextCardButton = (Button) findViewById(R.id.NextCardbutton);
         NextCardButton.setOnClickListener(new View.OnClickListener() {
             int i = 1;
-
+            /**
+            * onClick method called when button is pressed, on click listener
+            * when pressed, front (question) and back (solution) values for card submitted and card is added to list of cards (deck)
+            * @param View.OnClickListener
+            * @return nothing
+            * @since 1.0
+            */
             @Override
             public void onClick(View v) {
                 front = cardFront.getText().toString();
@@ -74,7 +86,12 @@ public class firstFlashcard extends AppCompatActivity {
             }
         });
     }
-
+    /**
+    * openNextActivity method passes intent to new activity and sets new content view
+    * @param none
+    * @return none
+    * @since 1.0
+    */
     public void openNextActivity() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
